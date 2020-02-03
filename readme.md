@@ -11,7 +11,11 @@
 
 [ESP32 Datasheet](https://www.espressif.com/sites/default/files/documentation/esp32_datasheet_en.pdf)
 
-[ESP32 SDK](https://www.espressif.com/en/products/hardware/esp32/resources)
+[ESP32 Resources/SDK](https://www.espressif.com/en/products/hardware/esp32/resources)
 
 
 ### Cap03
+
+[WiFi LoRa 32 (V2)](https://heltec.org/project/wifi-lora-32/)
+
+[ESP 32 Overview](https://www.espressif.com/en/products/hardware/esp32/overview)
