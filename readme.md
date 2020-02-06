@@ -75,3 +75,23 @@ Para compilar corretamente  instale o pyserial usando o PIP do Python
 pip install pyserial
 ```
 
+Use o programa listado em *cap_03/hello_world_modulo/hello_world_modulo.ino*, selecione 
+**Tools > Board > Heltec Wireless Stick**
+
+Escolha a porta também, no meu caso uso Linux: **Tools > Board > /dev/ttyUSB3**
+
+
+#### Portas e Serial monitor
+
+Por default o upload do código é feito a 921600 bauds, por isso no código de inicialização 
+configure a interface serial para 115200 bauds, assim será possivel fazer leituras no Serial Monitor do Arduino IDE
+
+```
+/* Funcao setup */
+void setup() 
+{
+    /* inicializa display OLED */
+    Wire.begin(4, 15);
+    Serial.begin(115200);
+```
+

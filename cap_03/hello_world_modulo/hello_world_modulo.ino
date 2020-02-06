@@ -23,11 +23,15 @@ Adafruit_SSD1306 display(SCREEN_WIDTH, SCREEN_HEIGHT, &Wire, 16);
 /* Variaveis */
 int contador = 0;
 
+
 /* Funcao setup */
 void setup() 
 {
     /* inicializa display OLED */
     Wire.begin(4, 15);
+
+    /* Configura o baud rate para 115200 da interface serial */
+    Serial.begin(115200);
 
     if(!display.begin(SSD1306_SWITCHCAPVCC, OLED_ADDR)) 
         Serial.println("Display OLED: falha ao inicializar");        
@@ -62,7 +66,9 @@ void loop()
     display.setCursor(0, OLED_LINE5);
     display.print(contador);
     display.println("s");
-           
+    
+//    Serial.println("XPTO"); 
+    
     display.display();
 
     contador++;
