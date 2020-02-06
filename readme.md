@@ -23,4 +23,6 @@
 #### Pinagem
 
 
+Image from [Usina Info](https://www.usinainfo.com.br/blog/esp32-lora-wifi-sx1278/)
+
 ![pinagem](imgs/pinout.jpg)
