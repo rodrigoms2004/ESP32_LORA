@@ -57,8 +57,7 @@ Clique na opção **esp32 by Espressif Systems** e depois no botão **Install**
 
 **Bibliotecas de LoRa e display OLED**
 
-O autor do livro indica um link do datasheet para baixar a biblioteca, muito confuso e decepcionante tal falta de cuidado com 
-um essencial com a didática. Segui as instruções da própria Heltec [Download the Heltec ESP32 Library](https://docs.heltec.cn/#/en/user_manual/how_to_install_esp32_Arduino?id=step2-download-the-heltec-esp32-library)
+O autor do livro indica um link do datasheet para baixar a biblioteca, muito confuso e decepcionante tal falta de cuidado essencial com a didática. Segui as instruções da própria Heltec [Download the Heltec ESP32 Library](https://docs.heltec.cn/#/en/user_manual/how_to_install_esp32_Arduino?id=step2-download-the-heltec-esp32-library)
 
 
 Vá em **Sketch > Include Library > Manage Libraries**, busque por *Heltec ESP32* e clique em **Install**
@@ -94,4 +93,17 @@ void setup()
     Wire.begin(4, 15);
     Serial.begin(115200);
 ```
+
+
+
+### Cap04 - Comunicação ponto a ponto com LoRa
+
+Topologias aceitas: ponto-a-ponto e estrela
+
+No ponto-a-ponto comunicação sincrona duplex ou full-duplex
+
+
+Código do livro não funciona, usar abaixo:
+
+https://github.com/HelTecAutomation/Heltec_ESP32/blob/master/examples/LoRa/LoRaSender/LoRaSender.ino
 

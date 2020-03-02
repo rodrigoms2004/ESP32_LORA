@@ -52,7 +52,7 @@ void loop()
     display.clearDisplay();
     
     display.setCursor(0, OLED_LINE1);
-    display.println("Ola!");
+    display.println("Ola XPTO!");
      
     display.setCursor(0, OLED_LINE2);
     display.println("Programa:");
